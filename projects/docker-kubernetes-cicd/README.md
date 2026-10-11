@@ -1,6 +1,6 @@
 # Docker + Kubernetes CI/CD Workflow
 
-The GitHub Actions workflow builds the Docker app from `../dockerized-python-app`, runs it, and smoke-tests its HTTP endpoint.
+The active root-level workflow [`.github/workflows/container-ci.yml`](../../.github/workflows/container-ci.yml) builds the Docker app from `projects/dockerized-python-app`, runs it, and smoke-tests its HTTP endpoint.
 
 ## Run locally
 
