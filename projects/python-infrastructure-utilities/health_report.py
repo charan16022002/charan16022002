@@ -5,7 +5,6 @@ import os
 import platform
 import shutil
 import socket
-import time
 
 
 def main() -> None:
