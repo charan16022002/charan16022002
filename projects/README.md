@@ -13,4 +13,4 @@ These labs are being built as practical, reviewable examples. Each project has i
 
 ## Validation status
 
-The files are published to GitHub. Do not interpret publication as proof that each project has been executed in a live environment. Run each project's validation steps and record real results before describing it as fully tested.
+The Python CI and container build/smoke-test workflows have passed on GitHub Actions. The other labs are published starter examples and still need their documented validation steps run in appropriate environments.
