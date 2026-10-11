@@ -1,0 +1,32 @@
+---
+- name: Collect a basic Linux baseline
+  hosts: linux
+  become: false
+  gather_facts: true
+
+  tasks:
+    - name: Display host and OS details
+      ansible.builtin.debug:
+        msg:
+          - "Host: {{ inventory_hostname }}"
+          - "Distribution: {{ ansible_distribution }} {{ ansible_distribution_version }}"
+          - "Kernel: {{ ansible_kernel }}"
+          - "Architecture: {{ ansible_architecture }}"
+
+    - name: Check root filesystem usage
+      ansible.builtin.command: df -h /
+      register: root_fs
+      changed_when: false
+
+    - name: Show root filesystem usage
+      ansible.builtin.debug:
+        var: root_fs.stdout_lines
+
+    - name: Check uptime
+      ansible.builtin.command: uptime
+      register: uptime_result
+      changed_when: false
+
+    - name: Show uptime
+      ansible.builtin.debug:
+        var: uptime_result.stdout
