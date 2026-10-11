@@ -57,7 +57,7 @@ I have published starter implementations and runbooks for these portfolio labs i
 | [Docker + Kubernetes CI/CD](projects/docker-kubernetes-cicd/) | Container build and smoke-test workflow |
 | [Python Infrastructure Utilities](projects/python-infrastructure-utilities/) | Standard-library host and filesystem report |
 
-**Important:** the connected GitHub tools available in this session can commit files to existing repositories, but do not expose a create-new-repository action. For that reason, these projects currently live in folders in this profile repository rather than in 11 separate GitHub repositories. The project files are published; local execution, hosted workflow results, and cloud/cluster provisioning still need to be run and verified before calling the labs fully tested.
+**Important:** the connected GitHub tools available in this session can commit files to existing repositories, but do not expose a create-new-repository action. For that reason, these projects currently live in folders in this profile repository rather than in 11 separate GitHub repositories. The Python CI and container build/smoke-test workflows have both completed successfully on GitHub Actions. The remaining Terraform, Ansible, Kubernetes, Linux, Prometheus, and Zabbix labs still require environment-specific validation before they can be described as fully tested.
 
 ### Existing Repository
 
