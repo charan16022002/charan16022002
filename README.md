@@ -41,89 +41,27 @@ I work on production infrastructure reliability across enterprise and telecom en
 
 ## 🚀 SRE & DevOps Portfolio
 
-The projects below are **portfolio project plans/labs** intended to demonstrate practical skills. They are not claims of completed implementations or employer production systems. Repository links will be added as each project is built and published.
+I have published starter implementations and runbooks for these portfolio labs in the `projects/` directory of this repository. They are learning projects, not claims of production deployment or fully validated live environments.
 
-### 1. GitHub Actions CI/CD Pipeline
-**Goal:** Automate code validation and build workflows on every push and pull request.
-- Create GitHub Actions workflows for checkout, dependency setup, tests, and build.
-- Use branch and pull-request triggers, workflow artifacts, and job-level conditions.
-- Document failed-run troubleshooting and successful run evidence.
-- **Skills:** Git, GitHub Actions, YAML, CI/CD.
+| Project | What it covers |
+|---|---|
+| [GitHub Actions Python CI](projects/github-actions-python-ci/) | Python unit tests and push/PR CI workflow |
+| [Dockerized Python App](projects/dockerized-python-app/) | Non-root container and JSON HTTP endpoint |
+| [Kubernetes Deployment Lab](projects/kubernetes-deployment/) | Deployment, Service, probes, resource limits, troubleshooting |
+| [Linux Administration Toolkit](projects/linux-admin-toolkit/) | Read-only host health snapshot script |
+| [Terraform AWS VPC](projects/terraform-aws-vpc/) | Terraform VPC and subnet starter configuration |
+| [Ansible Linux Baseline](projects/ansible-linux-baseline/) | Read-only Linux facts and health checks |
+| [Prometheus Monitoring](projects/prometheus-monitoring/) | Scrape configuration and alert rule example |
+| [Zabbix Linux Monitoring](projects/zabbix-linux-monitoring/) | Host monitoring and alert investigation runbook |
+| [Terraform + Ansible Workflow](projects/terraform-ansible-workflow/) | Provision-then-configure workflow guide |
+| [Docker + Kubernetes CI/CD](projects/docker-kubernetes-cicd/) | Container build and smoke-test workflow |
+| [Python Infrastructure Utilities](projects/python-infrastructure-utilities/) | Standard-library host and filesystem report |
 
-### 2. Dockerized Application
-**Goal:** Package an application into a reproducible container image.
-- Write a Dockerfile using a suitable base image and a clear build/run guide.
-- Configure ports, environment variables, health checks, and .dockerignore.
-- Demonstrate image build, container run, logs, and troubleshooting commands.
-- **Skills:** Docker, containers, image management.
-
-### 3. Kubernetes Deployment & Troubleshooting Lab
-**Goal:** Deploy and troubleshoot a containerized sample application.
-- Define Kubernetes Deployments, Services, ConfigMaps, and Ingress examples.
-- Practise pod inspection, logs, events, rollout status, and resource troubleshooting.
-- Include example failure scenarios and a step-by-step runbook.
-- **Skills:** Kubernetes, kubectl, YAML, application reliability.
-
-### 4. Linux Server Administration & Health Checks
-**Goal:** Create a practical Linux operations toolkit and administration runbook.
-- Collect CPU, memory, disk, uptime, and service-status information.
-- Document users/groups, permissions, systemd services, logs, storage, and networking checks.
-- Add safe checks, example output, and troubleshooting procedures for RHEL/Linux.
-- **Skills:** Linux, RHEL, system administration, scripting.
-
-### 5. Terraform Infrastructure as Code
-**Goal:** Provision and manage a small, low-cost test environment using reusable Terraform configuration.
-- Define providers, variables, outputs, and resource configuration.
-- Practise terraform fmt, validate, plan, and apply/destroy safely.
-- Explain state management, secrets handling, and cost-control precautions.
-- **Skills:** Terraform, IaC, cloud infrastructure.
-- Use a sandbox account and review costs before provisioning resources.
-
-### 6. Ansible Configuration Management
-**Goal:** Automate repeatable Linux configuration tasks.
-- Create an inventory, variables, and reusable playbooks.
-- Demonstrate package installation, configuration management, and service-state checks.
-- Use syntax checks, idempotent tasks, and clear validation steps.
-- **Skills:** Ansible, YAML, Linux administration, automation.
-
-### 7. Prometheus Monitoring & Alerting
-**Goal:** Demonstrate basic metrics collection and alerting for a sample service.
-- Configure a test monitoring target and Prometheus scrape settings.
-- Create example alert rules and explain how to investigate an alert.
-- Include sample queries, expected results, and troubleshooting notes.
-- **Skills:** Prometheus, observability, alerting.
-
-### 8. Zabbix Linux Monitoring Lab
-**Goal:** Document a safe test setup for monitoring Linux host health.
-- Explore host monitoring, items, triggers, and alert investigation.
-- Document CPU, memory, disk, and service availability checks.
-- Include sample incident-to-resolution notes.
-- **Skills:** Zabbix, Linux monitoring, operational support.
-
-### 9. Ansible + Terraform Provisioning Workflow
-**Goal:** Demonstrate infrastructure provisioning followed by configuration management.
-- Use Terraform to define test infrastructure and Ansible to configure a reachable test host.
-- Document prerequisites, variable handling, execution order, and cleanup.
-- Keep credentials out of source control.
-- **Skills:** Terraform, Ansible, IaC, configuration management.
-
-### 10. Docker + Kubernetes CI/CD Workflow
-**Goal:** Connect code changes to a container build and a test Kubernetes deployment.
-- Run tests through GitHub Actions.
-- Build and tag a Docker image; publish it only after configuring repository permissions and secrets safely.
-- Use Kubernetes manifests for a sample deployment and document rollout verification.
-- **Skills:** GitHub Actions, Docker, Kubernetes, CI/CD.
-
-### 11. Python Infrastructure Utilities
-**Goal:** Automate repeatable, low-risk operational checks.
-- Build small utilities for log parsing, disk-space checks, or service-status reporting.
-- Include input validation, readable output, error handling, and usage documentation.
-- Demonstrate with sample data or a test environment.
-- **Skills:** Python, Linux operations, automation.
+**Important:** the connected GitHub tools available in this session can commit files to existing repositories, but do not expose a create-new-repository action. For that reason, these projects currently live in folders in this profile repository rather than in 11 separate GitHub repositories. The project files are published; local execution, hosted workflow results, and cloud/cluster provisioning still need to be run and verified before calling the labs fully tested.
 
 ### Existing Repository
 
-- [springboot-ci-cd-sample](https://github.com/charan16022002/springboot-ci-cd-sample) — an existing sample repository to review and improve.
+- [springboot-ci-cd-sample](https://github.com/charan16022002/springboot-ci-cd-sample) — existing sample repository to review and improve.
 
 ## 💼 Professional Experience
 
